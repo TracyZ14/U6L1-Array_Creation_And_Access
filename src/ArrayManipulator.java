@@ -96,7 +96,14 @@ public class ArrayManipulator
      */
     public int howLongLastWord()
     {
-        
+        if(words[words.length - 1] == null)
+        {
+            return 0;
+        }
+        else
+        {
+            return(words[words.length - 1].length());
+        }
     }
 
 
